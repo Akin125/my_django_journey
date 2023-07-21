@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Count App</title>
+</head>
+<body>
+
+    <form action="retrieve" method="POST">
+        {% csrf_token %}
+        <h3>Enter the text to be checked</h3>
+        <textarea rows="0" cols="150" name="textInput"></textarea>
+
+        <div>
+            <button>Enter</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
